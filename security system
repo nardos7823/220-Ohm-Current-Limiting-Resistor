@@ -1,0 +1,30 @@
+### 💻 The Project Code (`src/security_system.ino`)
+*This is the code file you will upload inside your `src` folder:*
+
+```cpp
+// INSA Summer Camp 2026 - Smart Security System Code
+
+const int PIR_PIN = 2;    // Motion sensor connected to digital pin 2
+const int LED_PIN = 13;   // Alert LED connected to digital pin 13
+int motionState = 0;      // Variable to store the sensor reading
+
+void setup() {
+  pinMode(PIR_PIN, INPUT);    // Set motion sensor as an input
+  pinMode(LED_PIN, OUTPUT);   // Set alert LED as an output
+  Serial.begin(9600);         // Initialize serial monitor for status tracking
+}
+
+void loop() {
+  // Read the state of the motion sensor
+  motionState = digitalRead(PIR_PIN);
+
+  if (motionState == HIGH) {
+    digitalWrite(LED_PIN, HIGH);  // Turn on the alarm LED
+    Serial.println("ALERT: Motion detected in secure zone!");
+  } else {
+    digitalWrite(LED_PIN, LOW);   // Turn off the alarm LED
+    Serial.println("Status: Secure");
+  }
+  
+  delay(500); // Small delay to stabilize readings
+}
