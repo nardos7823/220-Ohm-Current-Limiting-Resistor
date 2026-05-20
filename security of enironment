@@ -1,0 +1,31 @@
+## 3. The Actual Code Example (To put in `src/environment_monitor.ino`)
+
+This is the actual code you can upload to show employers you know how to write clean, commented code:
+
+```cpp
+// INSA Summer Camp 2026 - Smart Monitor Code
+
+const int LED_PIN = 13;       // LED connected to digital pin 13
+const int THRESHOLD = 30;     // Temperature alert threshold in Celsius
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);   // Set the LED pin as an output
+  Serial.begin(9600);         // Start serial communication for debugging
+}
+
+void loop() {
+  // Mock temperature reading for demonstration
+  int currentTemperature = 32; 
+
+  Serial.print("Current Temperature: ");
+  Serial.println(currentTemperature);
+
+  // If it's too hot, turn on the alert LED
+  if (currentTemperature > THRESHOLD) {
+    digitalWrite(LED_PIN, HIGH); 
+  } else {
+    digitalWrite(LED_PIN, LOW);
+  }
+
+  delay(2000); // Wait for 2 seconds before checking again
+}
