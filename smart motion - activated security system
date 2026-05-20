@@ -1,0 +1,27 @@
+# Smart Motion-Activated Security System
+
+A hardware-based security prototype developed during the 2026 INSA Summer Camp to protect restricted physical spaces using automated monitoring.
+
+---
+
+## 💡 Project Overview
+This project addresses the need for automated physical security in sensitive environments like server rooms or offices. Utilizing a motion sensor, the system actively scans the environment and triggers a localized visual alarm immediately upon detecting unauthorized movement.
+
+## 🛠️ Hardware Components
+* **Microcontroller (Arduino Uno):** The central controller that processes sensor data and executes the security logic.
+* **PIR Motion Sensor:** Detects movement by measuring changes in infrared light levels emitted by surrounding objects.
+* **220-ohm Resistor:** Connected in series with the LED to limit current flow and protect the component from overvoltage.
+* **Red LED:** Serves as the visual alarm indicator when unauthorized motion is detected.
+* **Breadboard & Jumper Wires:** Used to prototype and establish safe electrical connections without soldering.
+
+## 🚀 Key Features
+* **Real-Time Detection:** Instantly processes environmental changes to identify motion.
+* **Hardware Protection:** Integrated resistors ensure the long-term durability of the electrical components.
+* **Versatile Framework:** The code and hardware layout can easily be scaled up to trigger larger alarm systems or network notifications.
+
+## 📦 How to Setup and Run
+1. **Hardware Connection:** * Connect the PIR Sensor output pin to digital pin 2 on the Arduino.
+   * Connect the LED to digital pin 13 with the **220-ohm resistor** connected to the longer leg (anode).
+2. **Clone the Project:**
+   ```bash
+   git clone [https://github.com/yourusername/smart-security-system.git](https://github.com/yourusername/smart-security-system.git)
