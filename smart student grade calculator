@@ -1,0 +1,52 @@
+# Smart Student Grade Calculator
+
+## Description
+This project is a simple Python application that helps calculate:
+- Total marks
+- Average score
+- Final grade of a student
+
+The system accepts marks for five subjects and automatically calculates the result.
+
+## Features
+- User-friendly input system
+- Automatic grade calculation
+- Simple and clean output
+- Beginner-friendly Python project
+
+## Subjects Included
+- Mathematics
+- English
+- Biology
+- Chemistry
+- Physics
+
+## Programming Language
+Python 3
+
+## How to Run
+1. Install Python
+2. Open terminal or command prompt
+3. Run the file:
+
+python main.py
+
+## Example Output
+Enter Student Name: Nardos Getachew
+
+Enter Math Mark: 90
+Enter English Mark: 85
+Enter Biology Mark: 95
+Enter Chemistry Mark: 88
+Enter Physics Mark: 92
+
+========== RESULT ==========
+Student Name : Nardos Getachew
+Total Marks  : 450
+Average      : 90
+Final Grade  : A
+============================
+
+## Author
+Nardos Getachew  
+Grade 10 Student
