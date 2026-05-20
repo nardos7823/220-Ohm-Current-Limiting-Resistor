@@ -1,0 +1,22 @@
+name = input("Nardos Gtachew: ")
+
+math = float(input("Math: "))
+english = float(input("English: "))
+biology = float(input("Biology: "))
+
+total = math + english + biology
+average = total / 3
+
+if average >= 90:
+    grade = "A"
+elif average >= 75:
+    grade = "B"
+elif average >= 50:
+    grade = "C"
+else:
+    grade = "F"
+
+print("\nStudent:", name)
+print("Total =", total)
+print("Average =", average)
+print("Grade =", grade)
